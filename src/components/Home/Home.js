@@ -1,9 +1,14 @@
 import React from 'react';
+import { useLoaderData } from 'react-router-dom';
+import Hero from '../Hero/Hero';
+import Topics from '../Topics/Topics';
 
 const Home = () => {
+    const topics = useLoaderData();
     return (
         <div>
-            <h3>Home</h3>
+            <Hero></Hero>
+            <Topics topics={topics}></Topics>
         </div>
     );
 };
