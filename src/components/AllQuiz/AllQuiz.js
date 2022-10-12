@@ -10,7 +10,7 @@ const AllQuiz = () => {
         <div className='my-5'>
             <h2 className='my-4'>Quiz for {allQuiz.data.name}</h2>
             {
-                questions.map(q => <Quiz key={q.id} quiz={q}></Quiz>)
+                questions.map((q, i) => <Quiz key={q.id} quiz={q} index={i}></Quiz>)
             }
         </div>
     );

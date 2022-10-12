@@ -15,7 +15,7 @@ const TopicCard = ({ cardData }) => {
                     </Card.Text>
                     <div className='d-flex justify-content-around align-items-center'>
                         <span className='fs-5'>{total} Quiz</span>
-                        <Link className='btn btn-light fw-semibold px-3' to={`quiz/${id}`}>Start</Link>
+                        <Link className='btn btn-primary fw-semibold px-3' to={`quiz/${id}`}>Start</Link>
                     </div>
                 </Card.Body>
             </Card>
