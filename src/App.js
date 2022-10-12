@@ -14,7 +14,7 @@ function App() {
       children: [
         {
           path: '/',
-          loader: () => fetch('https://openapi.programming-hero.com/api/quiz'),
+          loader: async () => fetch('https://openapi.programming-hero.com/api/quiz'),
           element: <Home></Home>
         },
         {
@@ -22,6 +22,7 @@ function App() {
           element: <Home></Home>
         }, {
           path: '/blogs',
+          loader: async () => fetch('/blogs.json'),
           element: <Blogs></Blogs>
         },
         {
