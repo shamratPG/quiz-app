@@ -4,7 +4,7 @@ import Article from '../Article/Article';
 
 const Blogs = () => {
     const blogs = useLoaderData();
-    console.log(blogs);
+    // console.log(blogs);
     return (
         <div style={{ width: '80%', margin: 'auto' }}>
             <h2 className='mt-5 mb-4'>Blogs</h2>

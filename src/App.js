@@ -5,6 +5,7 @@ import Home from './components/Home/Home';
 import Blogs from './components/Blogs/Blogs';
 import Stats from './components/Stats/Stats';
 import AllQuiz from './components/AllQuiz/AllQuiz';
+import NotFound from './components/NotFound/NotFound';
 
 function App() {
   const router = createBrowserRouter([
@@ -41,7 +42,7 @@ function App() {
     },
     {
       path: '*',
-      element: <div className='vh-100 text-white fs-1 d-flex justify-content-center align-items-center'>Page Not Found!!! <br></br> 404</div>
+      element: <NotFound></NotFound>
     }
 
   ])
