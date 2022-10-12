@@ -22,7 +22,7 @@ This is an Assignment for programming hero. I have used React Routing in this pr
 ### Links
 
 - [Solution URL](https://github.com/programming-hero-web-course2/b6-quiz-crackerz-shamratPG)
-- [Live Site URL](https://github.com/shamratPG/Relief-Website)
+- [Live Site URL](https://dev-quiz-shamratopu.netlify.app/)
 
 
 ## Built with
