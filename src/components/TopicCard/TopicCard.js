@@ -7,8 +7,8 @@ const TopicCard = ({ cardData }) => {
     // console.log(cardData);
     return (
         <div className="col-12 col-sm-6 col-lg-4 col-xl-3">
-            <Card className='bg-secondary text-white'>
-                <Card.Img className="border rounded border-2 border-light" variant="top" src={logo} />
+            <Card className='text-white ' style={{ backgroundColor: '#1f2021' }}>
+                <Card.Img className=" rounded border-2 border-light" variant="top" src={logo} />
                 <Card.Body className='pt-1'>
                     <Card.Text className='mb-2'>
                         <span className='fs-2'>{name}</span>
