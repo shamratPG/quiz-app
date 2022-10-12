@@ -6,7 +6,7 @@ import Topics from '../Topics/Topics';
 const Home = () => {
     const topics = useLoaderData();
     return (
-        <div>
+        <div className="bg-dark">
             <Hero></Hero>
             <Topics topics={topics}></Topics>
         </div>

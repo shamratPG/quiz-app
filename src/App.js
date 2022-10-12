@@ -4,6 +4,7 @@ import Main from './layout/Main';
 import Home from './components/Home/Home';
 import Blogs from './components/Blogs/Blogs';
 import Stats from './components/Stats/Stats';
+import AllQuiz from './components/AllQuiz/AllQuiz';
 
 function App() {
   const router = createBrowserRouter([
@@ -26,13 +27,24 @@ function App() {
         {
           path: '/stats',
           element: <Stats></Stats>
+        },
+        {
+          path: '/quiz/:id',
+          loader: async ({ params }) => {
+            return fetch(`https://openapi.programming-hero.com/api/quiz/${params.id}`)
+          },
+          element: <AllQuiz></AllQuiz>
         }
       ]
+    },
+    {
+      path: '*',
+      element: <div className='vh-100 text-white fs-1 d-flex justify-content-center align-items-center'>Page Not Found!!! <br></br> 404</div>
     }
 
   ])
   return (
-    <div className="App bg-dark">
+    <div className="App">
       <RouterProvider router={router}></RouterProvider>
     </div>
   );

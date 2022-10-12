@@ -1,6 +1,6 @@
 import React from 'react';
-import { Button } from 'react-bootstrap';
 import Card from 'react-bootstrap/Card';
+import { Link } from 'react-router-dom';
 
 const TopicCard = ({ cardData }) => {
     const { id, logo, name, total } = cardData;
@@ -14,8 +14,8 @@ const TopicCard = ({ cardData }) => {
                         <span className='fs-2'>{name}</span>
                     </Card.Text>
                     <div className='d-flex justify-content-around align-items-center'>
-                        <span className='fs-5'>{total} Quizs</span>
-                        <Button variant='light' className='fw-semibold px-3'>Start</Button>
+                        <span className='fs-5'>{total} Quiz</span>
+                        <Link className='btn btn-light fw-semibold px-3' to={`quiz/${id}`}>Start</Link>
                     </div>
                 </Card.Body>
             </Card>
